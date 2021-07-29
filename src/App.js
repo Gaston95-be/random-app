@@ -24,8 +24,8 @@ function App() {
     
   return (
     <div className="App">
-      <Route exact path='/home' render={() => <Cards users={users}/>}/>
-      <Route path='/home/:id'  render={({match}) => <User />}/>
+      <Route exact path='/' render={() => <Cards users={users}/>}/>
+      <Route path='/:id'  render={({match}) => <User />}/>
     </div>
   );
 
