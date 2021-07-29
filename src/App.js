@@ -1,5 +1,5 @@
 import './App.css';
-import Cards from './components/Cards';
+import Cards from './components/cards/Cards'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Route } from 'react-router-dom'
