@@ -3,6 +3,7 @@ import Cards from './components/cards/Cards'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Route } from 'react-router-dom'
+import User from './components/userdetail/user';
 
 const URL = `https://randomuser.me/api/?results=50`
 
@@ -20,12 +21,11 @@ function App() {
     cardsData()
     }, [])
 
-
-
-
+    
   return (
     <div className="App">
-      <Route path='/' render={() => <Cards users={users}/>}/>
+      <Route exact path='/home' render={() => <Cards users={users}/>}/>
+      <Route path='/home/:id'  render={({match}) => <User />}/>
     </div>
   );
 
