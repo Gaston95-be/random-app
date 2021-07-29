@@ -4,18 +4,17 @@ import style from './card.module.css'
 
 export default function Card ({title, name, lastname, city, country, id, username, thumbnail, large, email}) {
     return (
-        <Link to={`/home/${id}`}>
         <div className={style.card}>
+            <Link to={`/home/${id}`}>
             
-            <img src={large} alt={name}/>
-            <div className={style.info}>
                 
-                
+                <img src={large} alt={name}/>
+                <div className={style.info}>
                     <h3 className>{name} {lastname}</h3>
                     <h6 clasName>{city}, {country}</h6>
-                
-            </div>
-        </div>
-        </Link>
+                </div>
+            </Link>
+         </div>
+        
     )
 }
