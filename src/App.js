@@ -29,10 +29,10 @@ function App() {
     }
     
   return (
-    <div>
+    <React.Fragment>
       <Route  exact path='/' render={() => <Cards users={users}/>}/>
       <Route  path="/user/:id"  render={({match}) => <User user={onFilter(match.params.id)}/>} />
-    </div>
+    </React.Fragment>
   );
 
 }
