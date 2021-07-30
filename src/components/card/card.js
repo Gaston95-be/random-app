@@ -9,7 +9,7 @@ export default function Card ({ name, lastname, city, country, id, large}) {
                 <img className={style.img_card} src={large} alt={name}/>
                 <div className={style.info}>
                     <h3 className>{name} {lastname}</h3>
-                    <h6 clasName>{city}, {country}</h6>
+                    <h6 className>{city}, {country}</h6>
                 </div>
             </Link>
          </div>
