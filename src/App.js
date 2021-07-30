@@ -1,4 +1,3 @@
-import './App.css';
 import Cards from './components/cards/Cards'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
@@ -30,7 +29,7 @@ function App() {
     }
     
   return (
-    <div className="App">
+    <div>
       <Route  exact path='/' render={() => <Cards users={users}/>}/>
       <Route  path="/user/:id"  render={({match}) => <User user={onFilter(match.params.id)}/>} />
     </div>
