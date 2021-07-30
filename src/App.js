@@ -21,11 +21,20 @@ function App() {
     cardsData()
     }, [])
 
+    function onFilter(userId) {
+      let user = users.find(c => c.login.uuid === userId)
+      console.log(user)
+      if(user) {
+          return user
+      } else {
+          return null
+      }
+    }
     
   return (
     <div className="App">
-      <Route exact path='/' render={() => <Cards users={users}/>}/>
-      <Route path='/:id'  render={({match}) => <User />}/>
+      <Route  exact path='/' render={() => <Cards users={users}/>}/>
+      <Route  path="/user/:id"  render={({match}) => <User user={onFilter(match.params.id)}/>} />
     </div>
   );
 

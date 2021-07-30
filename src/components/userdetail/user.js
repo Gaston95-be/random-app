@@ -1,15 +1,15 @@
 import React from 'react'
 
-function User({title, name, lastname, city, country, id, username, thumbnail, large, email}) {
+function User({user}) {
     return (
-        <div className>
-            <div className>
-                <img src={large} alt={name}/>
-                <div className>
-                    <h2>{title}, {name} {lastname}</h2>
-                    <p>Location: {city}, {country}</p>
-                    <p>Username: {username}</p>
-                    <p>Email: {email}</p>
+        <div >
+            <div >
+                <img src={user.picture.large} alt={user.name.first}/>
+                <div >
+                    <h2>{user.name.title}, {user.name.first} {user.name.last}</h2>
+                    <p>Location: {user.location.city}, {user.location.country}</p>
+                    <p>Username: {user.login.username}</p>
+                    <p>Email: {user.email}</p>
 
                 </div>
 
