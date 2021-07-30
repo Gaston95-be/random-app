@@ -5,7 +5,6 @@ function Cards({users}) {
     return (
         <div className={style.container}>
             {users.map((user) => <Card
-                //destructuring
              key= {user.login.uuid}
              title = {user.name.title}
              name = {user.name.first}

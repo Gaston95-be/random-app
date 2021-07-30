@@ -14,7 +14,6 @@ function App() {
         const response = await axios.get(URL)
         const users =  await response.data
         setUsers(users.results)
-        console.log(users.results)
     }
 
     useEffect(() => {
@@ -23,7 +22,6 @@ function App() {
 
     function onFilter(userId) {
       let user = users.find(c => c.login.uuid === userId)
-      console.log(user)
       if(user) {
           return user
       } else {
