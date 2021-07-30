@@ -27,7 +27,7 @@
   font-size: 3vh;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 279px) and (max-width: 499px) {
   .image_detail {
     width: 30vh;
     margin-bottom: 15%;
@@ -38,6 +38,7 @@
     height: 80vh;
     width: 80%;
     margin-right: 20%;
+    font-size: 2vh;
   }
 }
 
@@ -49,10 +50,15 @@
   }
   .container_detail {
     font-size: 2vh;
+    width: 50%;
+    margin-right: 20%;
   }
 }
 
-@media (min-width: 991px) and (max-width: 1025px) {
+@media (min-width: 1023px) and (max-width: 1025px) {
+  .container_body {
+    width: 100vh;
+  }
   .image_detail {
     width: 30vh;
     margin-right: 2%;
@@ -60,5 +66,6 @@
   }
   .container_detail {
     font-size: 2vh;
+    margin-right: 35%;
   }
 }
