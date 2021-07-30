@@ -2,7 +2,7 @@
 
 To start you will need to clone this repository or download it.
 After opening the folder with VSC (or the IDE you use) you should open the terminal and run the command:
-### `npm i`
+### `npm install`
 once the installation is finished you can run this command:
 ### `npm start`
 
