@@ -11,11 +11,8 @@ function User({user}) {
                     <p>Location: {user.location.city}, {user.location.country}</p>
                     <p>Username: {user.login.username}</p>
                     <p>Email: {user.email}</p>
-
                 </div>
-
             </div>
-            
         </div>
     )
 }
