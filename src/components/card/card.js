@@ -6,7 +6,7 @@ export default function Card ({title, name, lastname, city, country, id, usernam
     return (
         <div className={style.card}>
             <Link to={`/user/${id}`}>
-                <img src={large} alt={name}/>
+                <img className={style.img_card} src={large} alt={name}/>
                 <div className={style.info}>
                     <h3 className>{name} {lastname}</h3>
                     <h6 clasName>{city}, {country}</h6>

@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   background-color: cadetblue;
-  width: 40vh;
+  width: 30vh;
   border: 1px solid #ffffff;
   border-radius: 3%;
   flex-wrap: wrap;
   margin: 10px;
 }
 
-img {
-  margin-left: 25%;
-  margin-top: 10%;
-  border-radius: 10%;
+.img_card {
+  margin-left: 15%;
+  margin-top: 5%;
+  border-radius: 100%;
 }
 
 :link {
@@ -20,7 +20,7 @@ img {
 }
 
 .info {
-  padding: 5%;
+  padding: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
