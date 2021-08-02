@@ -13,6 +13,5 @@ export default function Card ({ name, lastname, city, country, id, large}) {
                 </div>
             </Link>
          </div>
-        
     )
 }
