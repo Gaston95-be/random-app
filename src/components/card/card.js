@@ -8,8 +8,8 @@ export default function Card ({ name, lastname, city, country, id, large}) {
             <Link to={`/user/${id}`}>
                 <img className={style.img_card} src={large} alt={name}/>
                 <div className={style.info}>
-                    <h3 className>{name} {lastname}</h3>
-                    <h6 className>{city}, {country}</h6>
+                    <h3>{name} {lastname}</h3>
+                    <h6>{city}, {country}</h6>
                 </div>
             </Link>
          </div>
